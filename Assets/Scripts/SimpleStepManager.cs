@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;   // <-- عشان UI Image
 using System.Collections.Generic;
 
 public class SimpleStepManager : MonoBehaviour
@@ -11,6 +12,7 @@ public class SimpleStepManager : MonoBehaviour
     {
         public string stepName = "مرحلة جديدة";
         public AudioClip audioClip;
+        public Sprite stepSprite; // 👈 الصورة الخاصة بالخطوة
 
         [Header("أحداث")]
         public UnityEvent onAudioStart;
@@ -18,8 +20,12 @@ public class SimpleStepManager : MonoBehaviour
         public UnityEvent onStepComplete;
     }
 
+    [Header("الخطوات")]
     public List<Step> steps = new List<Step>();
+
+    [Header("مكونات")]
     public AudioSource audioSource;
+    public Image stepImage;  // 👈 الصورة في الـ UI (من Canvas)
 
     private int currentStep = 0;
     private bool audioPlaying = false;
@@ -42,13 +48,14 @@ public class SimpleStepManager : MonoBehaviour
             audioPlaying = false;
             steps[currentStep].onAudioEnd?.Invoke();
 
-            // Step 0 ينقل تلقائي
+            // مثال: الخطوة 0 تنقل تلقائي
             if (currentStep == 0)
             {
                 Invoke("NextStep", 2f); // بعد ثانيتين
             }
         }
     }
+
     void StartStep(int stepIndex)
     {
         currentStep = stepIndex;
@@ -56,6 +63,13 @@ public class SimpleStepManager : MonoBehaviour
 
         Debug.Log("▶️ بدأ Step: " + step.stepName);
 
+        // 🔹 تغيير الصورة في UI
+        if (stepImage != null && step.stepSprite != null)
+        {
+            stepImage.sprite = step.stepSprite;
+        }
+
+        // 🔹 تشغيل الصوت
         if (step.audioClip != null)
         {
             audioSource.clip = step.audioClip;
@@ -72,12 +86,11 @@ public class SimpleStepManager : MonoBehaviour
         currentStep++;
         if (currentStep < steps.Count)
         {
-            Invoke("StartStep", 1f);
             StartStep(currentStep);
         }
         else
         {
-            Debug.Log("🎉 خلصنا!");
+            Debug.Log("🎉 خلصنا كل الخطوات!");
         }
     }
 }
