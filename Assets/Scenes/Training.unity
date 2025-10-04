@@ -263,7 +263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   steps:
   - stepName: Hello How R U
-    audioClip: {fileID: 8300000, guid: f3d02eed8de884b8f8e2df103802faf5, type: 3}
+    audioClip: {fileID: 8300000, guid: 9007cb39779b3b04db652d81fa50b45e, type: 3}
     stepSprite: {fileID: 21300000, guid: 8601a3bbbe9ef1b42b5c0449e07ee988, type: 3}
     onAudioStart:
       m_PersistentCalls:
@@ -323,7 +323,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - stepName: Go To the Carpet
-    audioClip: {fileID: 8300000, guid: 51225974f2e80a54e9d0b349c393bd8e, type: 3}
+    audioClip: {fileID: 8300000, guid: 7712cd55cedecb543b162db44d4f7744, type: 3}
     stepSprite: {fileID: 21300000, guid: 993e532fd55eb8442bd64dfc9c952c8e, type: 3}
     onAudioStart:
       m_PersistentCalls:
@@ -383,7 +383,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   - stepName: Put The Hat
-    audioClip: {fileID: 8300000, guid: 41a04382be8d0894b987ba032f936004, type: 3}
+    audioClip: {fileID: 8300000, guid: e3ada0b0c1d2fb34f9c134a2b509a62d, type: 3}
     stepSprite: {fileID: 21300000, guid: 1cd6ad5904ab0694684f62270f06d30c, type: 3}
     onAudioStart:
       m_PersistentCalls:
@@ -418,78 +418,6 @@ MonoBehaviour:
     onStepComplete:
       m_PersistentCalls:
         m_Calls: []
-  - stepName: Press on the Button to Finish
-    audioClip: {fileID: 8300000, guid: 41a04382be8d0894b987ba032f936004, type: 3}
-    stepSprite: {fileID: 0}
-    onAudioStart:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 48360700}
-          m_TargetAssemblyTypeName: InstructorSimple, Assembly-CSharp
-          m_MethodName: StartTalking
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 673354136}
-          m_TargetAssemblyTypeName: ObjectHighlight, Assembly-CSharp
-          m_MethodName: HighlightOn
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    onAudioEnd:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 48360700}
-          m_TargetAssemblyTypeName: InstructorSimple, Assembly-CSharp
-          m_MethodName: StopTalking
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    onStepComplete:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 673354136}
-          m_TargetAssemblyTypeName: ObjectHighlight, Assembly-CSharp
-          m_MethodName: HighlightOff
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: ObjectHighlight, Assembly-CSharp
-          m_MethodName: HighlightOff
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
   audioSource: {fileID: 437186038}
   stepImage: {fileID: 495796534}
 --- !u!1 &49353892
@@ -1808,7 +1736,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   steps:
   - stepName: Hello How R U
-    audioClip: {fileID: 8300000, guid: f3d02eed8de884b8f8e2df103802faf5, type: 3}
+    audioClip: {fileID: 8300000, guid: 9007cb39779b3b04db652d81fa50b45e, type: 3}
     stepSprite: {fileID: 21300000, guid: 8601a3bbbe9ef1b42b5c0449e07ee988, type: 3}
     onAudioStart:
       m_PersistentCalls:
@@ -1868,7 +1796,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - stepName: Go To the Carpet
-    audioClip: {fileID: 8300000, guid: 51225974f2e80a54e9d0b349c393bd8e, type: 3}
+    audioClip: {fileID: 8300000, guid: 038713dfad8853f41bed3ad4732868b0, type: 3}
     stepSprite: {fileID: 21300000, guid: 993e532fd55eb8442bd64dfc9c952c8e, type: 3}
     onAudioStart:
       m_PersistentCalls:
@@ -1928,7 +1856,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   - stepName: Put The Hat
-    audioClip: {fileID: 8300000, guid: 41a04382be8d0894b987ba032f936004, type: 3}
+    audioClip: {fileID: 8300000, guid: e3ada0b0c1d2fb34f9c134a2b509a62d, type: 3}
     stepSprite: {fileID: 0}
     onAudioStart:
       m_PersistentCalls:
@@ -2071,18 +1999,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: ObjectHighlight, Assembly-CSharp
-          m_MethodName: HighlightOff
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
   audioSource: {fileID: 437186038}
   stepImage: {fileID: 495796534}
 --- !u!4 &437186037
@@ -2110,7 +2026,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 51225974f2e80a54e9d0b349c393bd8e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9007cb39779b3b04db652d81fa50b45e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
