@@ -8,13 +8,21 @@ public class InstructorSimple : MonoBehaviour
     {
         if (animator != null)
             animator.SetTrigger("Talk");
-        Debug.Log("بدأ الكلام");
+    }
+    public void Point()
+    {
+        if (animator != null)
+            animator.SetTrigger("Point");
     }
 
     public void StopTalking()
     {
         if (animator != null)
             animator.SetTrigger("Idle");
-        Debug.Log("توقف الكلام");
+    }
+    public void StopPointing()
+    {
+        if (animator != null)
+            animator.SetTrigger("Idle");
     }
 }
